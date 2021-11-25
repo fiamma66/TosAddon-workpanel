@@ -1,4 +1,11 @@
 # Workpanel
+
+Base On [ebisuke/TosAddons](https://github.com/ebisuke/TosAddons)
+
+Fix and Translate
+
+--------------
+
 各種レイド・チャレンジに入るためのパネルを表示します
 ## 概要
 画面右上に＜＜ボタンが表示されていますのでそれをクリックすると各種インスタンスダンジョンに入るためのボタンが表示されます。
@@ -18,6 +25,15 @@
 
 再度＞＞を押すと小さくなります
 # リリースノート
+## v0.2.5.1
+* Fix & Translate
+  * *Giltine* and *Res Sacrae Raid* entry now will auto buy Entry Voucher if no entry count left
+  * Fix infinity repeat when Mercenary Badge is depleted
+
+* Test/Add Function
+  * Solo Vasilissa Entry
+  * Solo Res Sacrae Raid Entry
+
 ## v0.2.5
 * session.ResetItemList()を仕込んでみるテスト
 ## v0.2.4
