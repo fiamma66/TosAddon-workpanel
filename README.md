@@ -19,12 +19,19 @@ Fix and Translate
 - Assister : アシスターダンジョン(ボタンの数字はステージ数です)
 - Velnice : ヴェルニケの破片ダンジョン(ボタンの数字は入場回数です)
 - Heroic : ヒロイックダンジョン
-
+- Refresh : 表示を更新します。表示回数がおかしいときに押してください。
 このとき、入場回数が不足している場合は傭兵団コインを使って入場券を購入し自動使用します。
 
 
 再度＞＞を押すと小さくなります
 # リリースノート
+
+
+=======
+## v0.2.6
+* ルチャドールパッチの対応
+* Refreshボタンの実装
+
 ## v0.2.5.1
 * Fix & Translate
   * *Giltine* and *Res Sacrae Raid* entry now will auto buy Entry Voucher if no entry count left
