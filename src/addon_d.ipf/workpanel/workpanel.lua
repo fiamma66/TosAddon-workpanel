@@ -390,7 +390,7 @@ function WORKPANEL_INITFRAME()
                     100,
                     "{s12}困難:{/}:剩餘 " ..
                         GET_CURRENT_ENTERANCE_COUNT(
-                            GetClassByType("Indun", WORKPANEL_GET_RELIC_CLSID()).PlayPerResetType
+                            GetClassByType("Indun", WORKPANEL_GET_RELIC_HARD_CLSID()).PlayPerResetType
                         ),
                     "WORKPANEL_ENTER_RELIC_HARD"
                 )

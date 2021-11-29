@@ -26,9 +26,20 @@ Fix and Translate
 再度＞＞を押すと小さくなります
 # リリースノート
 
+=======
 
-=======
-=======
+## v0.2.11.1
+* Translate & fix
+  * Fix infinity repeat when Mercenary Badge is depleted
+
+* Solo Vasilissa Will Not Buy Entry Voucher
+* Add White Witch Entry Button
+  * Will Not Buy Entry Voucher too!
+* Solo Moring & Solo Vasilissa Add Auto Enter Dugeon
+
+## v0.2.11
+* レリックハードの回数がおかしいのを修正
+
 ## v0.2.10
 * 先の修正で分裂券のバグが復活したので修正
 ## v0.2.9
