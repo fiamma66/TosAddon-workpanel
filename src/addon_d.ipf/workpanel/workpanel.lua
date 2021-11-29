@@ -282,12 +282,30 @@ function WORKPANEL_INITFRAME()
                     "",
                     ""
                 )
-
                 .next(
+                    "richtext",
+                    "dummy_witch",
+                    1,
+                    "",
+                    ""
+                )
+                .upper(
                     "richtext",
                     "label4moring",
                     60,
                     "   {ol}{s17}魔蝶",
+                    ""
+                )
+                .under(
+                    "button",
+                    "btnwhitewitch",
+                    60,
+                    "{s12}魔女:{/}"..WORKPANEL_GETINDUNENTERCOUNT(619), "WORKPANEL_ENTER_WITCH")
+                .next(
+                    "richtext",
+                    "dummy_witch2",
+                    1,
+                    "",
                     ""
                 )
                 .upper("button", "btnmoringsolo", 70, "{s12}單人:{/}"..WORKPANEL_GETINDUNENTERCOUNT(525), "WORKPANEL_ENTER_MORING_SOLO")
@@ -814,6 +832,7 @@ function WORKPANEL_ENTER_MORING_SOLO(rep)
     --     WORKPANEL_BUY_ITEM({"PVP_MINE_45"}, "WORKPANEL_ENTER_MORING",rep)
     -- else
         ReqRaidAutoUIOpen(525)
+        ReserveScript("ReqMoveToIndun(1,0)", 1.25)
     --end
 end
 function WORKPANEL_ENTER_WITCH(rep)
@@ -821,11 +840,11 @@ function WORKPANEL_ENTER_WITCH(rep)
         ui.SysMsg("無法在城市外使用。")
         return
     end
-    if not rep and WORKPANEL_GETREMAININDUNENTERCOUNT(619) == 0 then
-        WORKPANEL_BUY_ITEM({"PVP_MINE_44"}, "WORKPANEL_ENTER_WITCH",rep)
-    else
+    -- if not rep and WORKPANEL_GETREMAININDUNENTERCOUNT(619) == 0 then
+    --     WORKPANEL_BUY_ITEM({"PVP_MINE_44"}, "WORKPANEL_ENTER_WITCH",rep)
+    -- else
         ReqRaidAutoUIOpen(619)
-    end
+    -- end
 end
 function WORKPANEL_ENTER_GILTINE()
     if WORKPANEL_ISINCITY() == false then
@@ -883,11 +902,12 @@ function WORKPANEL_ENTER_VASILISSA_SOLO(rep)
         ui.SysMsg("Cannot use outside city.")
         return
     end
-    if not rep and WORKPANEL_GETREMAININDUNENTERCOUNT(657) == 0 then
-        WORKPANEL_BUY_ITEM({"PVP_MINE_53"}, "WORKPANEL_ENTER_VASILISSA_SOLO",rep)
-    else
+    -- if not rep and WORKPANEL_GETREMAININDUNENTERCOUNT(657) == 0 then
+    --     WORKPANEL_BUY_ITEM({"PVP_MINE_53"}, "WORKPANEL_ENTER_VASILISSA_SOLO",rep)
+    -- else
         ReqRaidAutoUIOpen(657)
-    end
+        ReserveScript("ReqMoveToIndun(1,0)", 1.25)
+    -- end
 end
 function WORKPANEL_ENTER_ASSISTER()
     local acc_obj = GetMyAccountObj()
