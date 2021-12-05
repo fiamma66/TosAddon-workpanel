@@ -421,7 +421,7 @@ function WORKPANEL_INITFRAME()
                     "" .. stage,
                     "WORKPANEL_ENTER_ASSISTER"
                 )
-                .upper("richtext", "label9", 100, "  {ol}{s17}貝勒尼凱", "")
+                .upper("richtext", "label9", 100, "{ol}{s17}貝勒尼凱", "")
                 .under(
                     "button",
                     "btnvelniceweekly",
@@ -851,11 +851,12 @@ function WORKPANEL_ENTER_GILTINE()
         ui.SysMsg("無法在城市外使用。")
         return
     end
-    if not rep and WORKPANEL_GETREMAININDUNENTERCOUNT(635) == 0 then
-        WORKPANEL_BUY_ITEM({"PVP_MINE_84"}, "WORKPANEL_ENTER_GILTINE",rep)
-    else
+    -- Giltine Can Enter Without any count left
+--     if not rep and WORKPANEL_GETREMAININDUNENTERCOUNT(635) == 0 then
+--         WORKPANEL_BUY_ITEM({"PVP_MINE_84"}, "WORKPANEL_ENTER_GILTINE",rep)
+--     else
         ReqRaidAutoUIOpen(635)
-    end
+--     end
 
 end
 
